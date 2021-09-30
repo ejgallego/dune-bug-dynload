@@ -1,0 +1,14 @@
+(library
+ (name lib)
+ (modules lib))
+
+(executable
+ (name fl1)
+ (modules fl1)
+ (libraries lib))
+
+(executable
+ (name fl2)
+ (modules fl2)
+ (libraries lib findlib.dynload))
+
